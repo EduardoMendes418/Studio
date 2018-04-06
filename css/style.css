@@ -1,0 +1,415 @@
+/*PADRAO =====*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Economica';
+}
+
+html, body{
+	height: 100%;
+	background: black; 
+}
+
+/*CLASSI FIXAS =====*/
+input[type=submit],
+input[type=text],
+input[type=email],
+textarea{
+	appearance:none;	
+	-webkit-appearance:none;
+}/*evita botoon ficar destorcido no navegadores mobile*/
+
+.container{
+	max-width: 1024px;
+	padding: 0 2%;
+	margin: 0 auto; 
+}
+
+.clear{
+	clear: both;
+}
+
+/*Menu-TOPO=====*/
+header{
+	background-image: url(../image/logo-banner.jpg);
+	min-height:650px;
+	padding: 50px 0;
+	background-size: cover;
+	background-position: center;
+}
+
+.logo{
+	position: relative;
+	z-index: 2;
+	background-position: url();
+	background-size: 100% 100%;
+	float: left;
+	width: 132px;
+	height: 30px;
+	color: white;
+}
+nav.desktop{
+	float: right;
+	padding-top: 15px;
+}
+
+nav.desktop ul{
+	list-style-type: none;
+}
+
+nav.desktop li{
+	display: inline-block;
+	margin: 0 20px;
+}
+
+nav.desktop a{
+	color: white;
+	text-decoration: none; 
+}
+
+nav ul li a.btn-nav{
+	margin: 10px 10px;
+	padding: 3px 8px;
+	border-radius: 20px;
+	border:1px solid white;
+}
+
+/*MENU-MOBILE=====*/
+nav.mobile{
+	display: none;
+	float: right;
+	padding-top: 15px;
+}
+
+nav.mobile li{
+	padding-top: 15px;
+}
+
+nav.mobile ul{
+	position: absolute;
+	background: black;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 90px 0 30px 0;
+	text-align: center;
+	display: none;
+}
+
+nav.mobile a{
+	text-decoration: none;
+	color: white;
+}
+
+nav.mobile h3{
+	position: relative;
+	z-index:2;
+	color: white;
+	cursor: pointer;
+	font-size: 30px;
+}
+
+/*BLOCO SOBRE=====*/
+section.sobre{
+	padding: 60px 0;
+}
+
+section.sobre > .container{
+	max-width: 1100px;
+	
+}
+
+.title-sobre{
+	text-align: center;
+}
+
+.title-sobre h3{
+	color: white;
+	font-size: 28px;
+	font-weight: normal;
+	padding-bottom: 20px;
+}
+
+.title-sobre p{
+	color: white;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+section.sobre > .container  img{
+	width: 70%;
+	
+}
+
+/*BLOCO  SERVICOS=====*/
+section.servicos{
+	padding: 20px 0;
+}
+
+section.servicos > .container{
+	max-width: 1100px;
+}
+
+.title-servicos{
+	text-align: center;
+}
+
+.title-servicos h3{
+	color: white;
+	font-size: 28px;
+	font-weight: normal;
+	margin-top: 20px;
+}
+
+/* funiona em todos os navegadores
+
+Cross browser
+
+*/
+.space-servicos{
+	display: flex;
+	font-weight: normal;
+	font-size: 28px;	
+}
+
+.flex-bloco-fig{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 20px;
+}
+
+.box-servicos{
+	padding: 20px;
+	border-radius: 3px;
+	background-color: #fff;
+	background: #ccc;
+	width: 32.3%;
+	text-align: center;
+	margin: 5px;
+}
+
+.box-servicos img{
+	width: 70%;
+	
+}
+
+.box-servicos-wrapper{
+	padding: 20px;
+}
+
+/*BLOCO  DEPOIMENTOS=====*/
+section.depoimentos{
+	padding-top: 80px;
+}
+
+section.depoimentos h3{
+	color: white;
+	text-align: center;
+	font-weight: normal;
+	font-size: 30px;
+	margin: 25px 5px;
+}
+
+section.depoimentos .container{
+	max-width: 400px;
+	padding: 5px 0;
+}
+
+section.depoimentos .depoimentos-single{
+	text-align: center;
+	width: 100%;
+	padding: 0 2%;
+}
+
+.depoimentos-single quote{
+	font-size: 20px;
+	color: white;
+	padding-bottom: 30px;
+}
+
+.depoimentos-single  .nome-depoimentos{
+	padding: 19px 0;
+}
+
+.nome-depoimentos img{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	border-radius: 25px;
+	text-align: center;
+}
+
+.nome-depoimentos span{
+	position: relative;
+	top: 20px;
+	left: 10px;
+	font-size: 18px;
+	color: white;
+	display:inline-block;
+	vertical-align: top;
+}
+
+/*BLOCO-CONTATO=====*/
+section.cliente-contatos{
+	padding: 80px 2%;
+}
+
+section.cliente-contatos h3{
+	color: white;
+	text-align: center;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+section.cliente-contatos form{
+	width: 100%;
+	margin: 20px auto;
+	max-width: 500px;
+}
+
+.form-wrapper{
+	float: left;
+	padding: 0 10px;
+	margin-top: 10px;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.form-wrapper span{
+	font-size: 15px;
+	color: white;
+}
+
+.form-wrapper input[type=text]{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 9px;
+	border: 1px solid #ccc;
+	padding-top: 8px;
+
+}
+
+.form-wrapper textarea{
+	width: 100%;
+	margin-top: 8px;
+	padding: 8px;
+	height: 121px;
+	resize: none;
+	border: 1px solid #ccc;
+
+}
+
+.form-wrapper input[type=submit]{
+	width: 90%;
+	height: 35px;
+	border-radius: 30px;
+	cursor: pointer;
+	color: black;
+	background: #ccc;
+	display: inline-block;
+
+}
+
+.form-wrapper input[type=submit]:focus{
+	outline: none;
+}
+
+/*BLOCO-RODAPE=====*/
+footer.container{
+	max-width: 1100px;
+}
+
+footer{
+	padding: 30px 2%;
+	background-color: #ccc;
+}
+
+footer .footer-block{
+	float: left;
+	width: 33.3%;
+}
+
+footer .footer-block p{
+	font-size: 15px;
+	color: white;
+	margin-top: 8px;
+	text-align: center;
+}
+
+footer .footer-block h3{
+	font-size: 28px;
+	color: black;
+	font-weight: normal;
+	text-align: center;
+}
+
+
+/*@MEDIA SCREEN=====*/
+/*1024px*/
+@media screen and ( max-width: 1024px){
+	
+	nav.desktop{
+		display: none;
+	}/*desktop some*/
+
+	nav.mobile{
+		display: block;
+	}/*mobile-aparece*/
+
+	section.sobre > .container{
+	width: 100%;
+	}
+
+	.flex-bloco-fig{
+		width: 100%;
+	}
+
+	section.sobre > .container  img{
+	width: 70%;
+	}
+	
+}
+
+/*768px*/
+@media screen and ( max-width: 768px){
+	
+	footer{
+		text-align: center;
+	}
+
+	footer .footer-block{
+		float: none;
+		width: 100%;
+		margin: 30px 0;
+	}
+
+	section.servicos .flex-bloco-fig .box-servicos{
+		text-align: center;
+	}
+	
+	.box-servicos{
+		width: 100%;
+	}
+
+	.box-servicos img{
+		height: 100%;
+	}
+
+	section.sobre > .container  img{
+	width:100%;
+	}
+}
+
+/*480px*/
+@media screen and ( max-width: 480px){
+
+
+}
